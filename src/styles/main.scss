@@ -1,0 +1,63 @@
+@use "./font.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "SourceHanSansCN", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", Helvetica, "Segoe UI",
+    "Arial", "Roboto", "PingFang SC", "miui", "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  background: #000;
+  -webkit-user-select: none; /*webkit浏览器*/
+  user-select: none;
+}
+
+@keyframes blurAni {
+  to {
+    filter: blur(3px);
+  }
+}
+
+@keyframes bkAnimate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowAnimate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes arrowAnimate2 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(90%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+// 360旋转
+@keyframes rotate360Animate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
